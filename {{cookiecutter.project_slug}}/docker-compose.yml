@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  {{cookiecutter.project_slug}}:
+    image: {{cookiecutter.project_image}}:latest-staging
+    volumes:
+      - ./:/opt/project
+    networks:
+      - main
+networks:
+{%- if cookiecutter.docker_compose_external_network == '' %}
+  main: null
+{%- else %}
+  # This network is created externally. Run `make network`
+  main:
+    external: true
+    name: {{ cookiecutter.docker_compose_external_network }}
+{%- endif %}
