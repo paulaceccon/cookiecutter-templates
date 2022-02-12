@@ -3,8 +3,21 @@
 Template for creating a project based on jupyter notebooks.
 It includes requirements to run Data Science / Machine Learning scripts.
 
-## Installation
-* https://cookiecutter.readthedocs.io/en/latest/installation.html
+## Project Structure
+
+```
+├── {{cookiecutter.project_slug}}
+    ├── .pre-commit-config.yaml
+    ├── .gitignore
+    ├── README.md
+    ├── Makefile
+    ├── README.md
+    ├── requirements.txt
+    ├── setup.cfg
+    ├── notebooks
+    │   ├── template.ipynb
+    └── index.ipynb
+```
 
 ## Creating a project
 
