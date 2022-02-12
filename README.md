@@ -15,7 +15,7 @@ It includes requirements to run Data Science / Machine Learning scripts.
     ├── requirements.txt
     ├── setup.cfg
     ├── notebooks
-    │   ├── template.ipynb
+    │   └── template.ipynb
     └── index.ipynb
 ```
 
